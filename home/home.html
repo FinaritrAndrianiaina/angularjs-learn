@@ -1,0 +1,7 @@
+<h1>Hello {{$ctrl.name}}!</h1>
+<p>Start editing {{$ctrl.query}} :)</p>
+<input ng-model="$ctrl.query" />
+<button ng-click="$ctrl.append($ctrl.query)">Add</button>
+<ul>
+  <li ng-repeat="(k,v) in $ctrl.list">{{v}}</li>
+</ul>
